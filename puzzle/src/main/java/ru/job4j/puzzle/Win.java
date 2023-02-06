@@ -10,7 +10,7 @@ public class Win {
         for (int i = 0; i < board.length; i++) {
             if (board[i][0] == 1) {
                 for (int j = 1; j < board[i].length; j++) {
-                    if (board[i][j] == board[i][j-1]) {
+                    if (board[i][j] == board[i][j - 1]) {
                         count++;
                     }
                 }
@@ -32,7 +32,6 @@ public class Win {
             }
             j++;
         }
-
         return count == 4;
     }
 }
